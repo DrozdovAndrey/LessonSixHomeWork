@@ -6,7 +6,7 @@
 
 
 
-namespace OtherMethods
+namespace HomeWork6 //OtherMethods
 {
     class Methods
     {

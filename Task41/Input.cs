@@ -6,9 +6,9 @@
 
 
 
-namespace MethodsInput
+namespace HomeWork6   //MethodsInput
 {
-    class Input
+    class Input  
     {
         public static void InputNumbersToArray(double[] array)
         {
