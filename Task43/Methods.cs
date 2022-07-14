@@ -1,9 +1,9 @@
 
-namespace Input  
+namespace Input
 {
-    class InputChek 
+    class InputChek
     {
-        
+
 
         public static double CheckInputNumbers()
         {
@@ -19,5 +19,20 @@ namespace Input
             }
 
         }
+        public static double CheckInputK2(double k1, double k2)
+        {
+
+            if (k1 != k2)
+            {
+                return k2;
+            }
+            else
+            {
+                Console.WriteLine("Введено некорректное значение, введите k2");
+                return CheckInputNumbers();
+            }
+
+        }
+
     }
 }

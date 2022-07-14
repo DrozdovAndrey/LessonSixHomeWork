@@ -9,15 +9,16 @@ namespace HomeWork6
 {
     class Task43
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Эта программа находит точку пересечения двух прямых,");
             Console.WriteLine("заданных уравнениями y = k1 * x + b1, y = k2 * x + b2");
             Console.WriteLine("Пожалуйста, введите значения переменных к и b");
             Console.WriteLine("Введите значение к1:");
             double k1 = InputChek.CheckInputNumbers();
-            Console.WriteLine("Введите значение к2:");
-            double k2 = InputChek.CheckInputNumbers();
+            Console.WriteLine("Введите значение к2 (не должно равняться k1):");
+            double k2 = InputChek.CheckInputK2(k1, InputChek.CheckInputNumbers());
+            InputChek.CheckInputK2(k1, k2);
             Console.WriteLine("Введите значение b1:");
             double b1 = InputChek.CheckInputNumbers();
             Console.WriteLine("Введите значение b2:");
