@@ -18,8 +18,8 @@ namespace HomeWork6   //MethodsInput
             try
             {
                 Console.WriteLine("Сколько чисел вы хотите ввести (введите натуральное число больше 0):");
-                int number = Convert.ToInt32(Console.ReadLine());
-                if (number < 0) number = number * -1;
+                int number = Convert.ToInt32(Console.ReadLine());       
+                if (number < 0) number = number * -1; // некрасивый код, пока не пойму как сделать лучше
                 if (number == 0)
                 {
                     Console.WriteLine("Вы ввели неправильные данные");
